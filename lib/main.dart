@@ -18,9 +18,15 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       theme: ThemeData.dark(),
       home: Scaffold(
-        body: SafeArea(
+        body: DecoratedBox(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('images/background.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 10),
+            padding: EdgeInsets.fromLTRB(10, 15, 10, 30),
             child: HomeScreen(),
           ),
         ),

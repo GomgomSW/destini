@@ -11,7 +11,7 @@ class Story {
     required this.story_title,
     required this.choose_text_1,
     required this.choose_text_2,
+
     // this.choose_input_1,
-    // this.choose_input_2
   });
 }
